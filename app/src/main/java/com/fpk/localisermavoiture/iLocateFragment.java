@@ -1,12 +1,12 @@
-package com.fpk.ilocate;
+package com.fpk.localisermavoiture;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -48,6 +48,8 @@ public class iLocateFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getContext(), "button settings clicked",
                         Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), SettingsActivity.class);
+                startActivity(intent);
             }
         });
         buttonLocate.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +59,6 @@ public class iLocateFragment extends Fragment {
                         Toast.LENGTH_SHORT).show();
             }
         });
-
 
     }
 }

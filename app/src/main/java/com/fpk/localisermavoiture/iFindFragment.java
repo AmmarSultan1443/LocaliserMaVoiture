@@ -1,4 +1,4 @@
-package com.fpk.ilocate;
+package com.fpk.localisermavoiture;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

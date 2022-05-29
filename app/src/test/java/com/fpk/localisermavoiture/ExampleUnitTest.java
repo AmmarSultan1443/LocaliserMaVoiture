@@ -1,4 +1,4 @@
-package com.fpk.ilocate;
+package com.fpk.localisermavoiture;
 
 import org.junit.Test;
 
