@@ -1,10 +1,12 @@
-package com.fpk.localisermavoiture;
+package com.ammarsultan1443.localisermavoiture;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceFragmentCompat;
+
+import com.ammarsultan1443.localisermavoiture.R;
 
 public class SettingsActivity extends AppCompatActivity {
 

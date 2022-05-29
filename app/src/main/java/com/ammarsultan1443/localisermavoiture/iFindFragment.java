@@ -1,4 +1,4 @@
-package com.fpk.localisermavoiture;
+package com.ammarsultan1443.localisermavoiture;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+
+import com.ammarsultan1443.localisermavoiture.R;
 
 public class iFindFragment extends Fragment {
     private ImageView earth2;

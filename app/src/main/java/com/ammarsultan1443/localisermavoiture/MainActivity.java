@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.fpk.localisermavoiture;
+package com.ammarsultan1443.localisermavoiture;
 
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -35,6 +35,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.ammarsultan1443.localisermavoiture.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
