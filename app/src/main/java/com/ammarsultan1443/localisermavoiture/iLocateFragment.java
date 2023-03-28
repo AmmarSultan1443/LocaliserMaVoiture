@@ -23,6 +23,9 @@ public class iLocateFragment extends Fragment {
     private Button buttonLocate;
     private Button buttonSearch;
     private Button buttonServiceCar;
+    private Button buttonValidate;
+    private Button buttonCancel;
+    private Button buttonMoreOptions;
     private ConstraintLayout constraintLayoutiLocate;
 
     @Override
@@ -44,6 +47,9 @@ public class iLocateFragment extends Fragment {
         buttonLocate=(Button)view.findViewById(R.id.imageButtonLocate);
         buttonSearch=(Button)view.findViewById(R.id.imageButtonSearch);
         buttonServiceCar=(Button)view.findViewById(R.id.imageButtonServiceCar);
+        buttonValidate=(Button)view.findViewById(R.id.imageButtonValidate);
+        buttonCancel=(Button)view.findViewById(R.id.imageButtonCancel);
+        buttonMoreOptions=(Button)view.findViewById(R.id.imageButtonMoreOptions);
 
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +65,14 @@ public class iLocateFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getContext(), "button Locate clicked",
                         Toast.LENGTH_SHORT).show();
+                buttonLocate.setVisibility(View.GONE);
+                buttonSearch.setVisibility(View.GONE);
+                buttonServiceCar.setVisibility(View.GONE);
+                buttonSettings.setVisibility(View.GONE);
+                buttonValidate.setVisibility(View.VISIBLE);
+                buttonCancel.setVisibility(View.VISIBLE);
+                buttonMoreOptions.setVisibility(View.VISIBLE);
+
             }
         });
 

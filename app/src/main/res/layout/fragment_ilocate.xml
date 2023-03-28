@@ -7,6 +7,44 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/imageButtonMoreOptions"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@mipmap/button"
+        android:scaleType="centerInside"
+        android:text="L"
+        android:textColor="#D81B60"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/imageButtonCancel"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@mipmap/button"
+        android:scaleType="centerInside"
+        android:text="L"
+        android:textColor="#D81B60"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
         android:id="@+id/imageButtonLocate"
         android:layout_width="78dp"
         android:layout_height="78dp"
@@ -22,6 +60,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/imageButtonValidate"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@mipmap/button"
+        android:scaleType="centerInside"
+        android:text="L"
+        android:textColor="#D81B60"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
