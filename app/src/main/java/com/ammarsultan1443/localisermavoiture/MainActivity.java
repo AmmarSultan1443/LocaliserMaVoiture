@@ -127,7 +127,7 @@ public class MainActivity extends FragmentActivity
         setContentView(R.layout.activity_main);
 
         // Construct a PlacesClient
-        Places.initialize(getApplicationContext(), BuildConfig.MAPS_API_KEY);
+        Places.initialize(getApplicationContext(), getString(R.string.google_maps_key));
         placesClient = Places.createClient(this);
 
         // Construct a FusedLocationProviderClient.
