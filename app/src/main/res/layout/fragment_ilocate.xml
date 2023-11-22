@@ -8,8 +8,9 @@
 
     <Button
         android:id="@+id/imageButtonMoreOptions"
-        android:layout_width="78dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
+        android:layout_marginTop="21dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="..."
@@ -17,13 +18,14 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonValidate"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonValidate"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonCancel"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/imageButtonCancel"
-        android:layout_width="78dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
@@ -32,28 +34,35 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="327dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMoreOptions"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMoreOptions"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/imageButtonLocate"
-        android:layout_width="78dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="72dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="L"
         android:textColor="#D81B60"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="703dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/SearchValidate"
+        app:layout_constraintEnd_toStartOf="@+id/SearchCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/SearchValidate"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="223dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="V"
@@ -61,14 +70,18 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="703dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonSearch"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonServiceCar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonSearch"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/imageButtonValidate"
         android:layout_width="78dp"
-        android:layout_height="79dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="24dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="V"
@@ -76,9 +89,11 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="224dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonCancel"
+        app:layout_constraintEnd_toEndOf="@+id/lookup"
+        app:layout_constraintStart_toEndOf="@+id/lookup"
+        app:layout_constraintTop_toBottomOf="@+id/lookup"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/imageButtonSearch"
@@ -90,14 +105,17 @@
         android:textColor="#D81B60"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="703dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/SearchCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/SearchCancel"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="42dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="X"
@@ -105,28 +123,34 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="703dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/SearchMoreOptions"
+        app:layout_constraintEnd_toStartOf="@+id/SearchMoreOptions"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonLocate"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/imageButtonServiceCar"
-        android:layout_width="78dp"
-        android:layout_height="78dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="SC"
         android:textColor="#D81B60"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="703dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SearchValidate"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonSearch"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/SearchMoreOptions"
-        android:layout_width="78dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="16dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
         android:text="..."
@@ -134,21 +158,26 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="715dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SearchCancel"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMoreOptions"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageViewEarth"
-        android:layout_width="78dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="239dp"
         android:src="@drawable/rush_white_circle"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/imageButtonSettings"
-        android:layout_width="78dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
         android:background="@mipmap/button"
         android:scaleType="centerInside"
@@ -156,28 +185,33 @@
         android:textColor="#D81B60"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="333dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEarth"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSearchBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="write a place to search"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/lookup"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/lookup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="162dp"
         android:text="Search"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="248dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintStart_toEndOf="@+id/editTextSearchBar"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
